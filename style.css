@@ -35,6 +35,11 @@ article {
     margin-right: auto;
     background-color: white;
     margin-left: auto;
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    overflow: auto;
 }
 
 footer {
@@ -43,6 +48,7 @@ footer {
     margin: 10px 0 20px 0;
     float: left;
     background-color: white;
+    text-align: center;
 }
 
 .container {
@@ -75,6 +81,37 @@ h2 {
     text-align: center;
 }
 
-#menu {
+#menu li {
+    list-style-type: none;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 3px;
+    display: block;
     text-align: center;
+    background-color: #ccc;
+}
+
+#menu ul li a:hover {
+    background-color: orange;
+    color: white;
+}
+
+#menu ul ul a{
+    position: relative;
+    bottom: 20px;
+    left: 100%;
+    display: none;
+}
+
+#menu ul li:hover > ul a{
+    display: block;
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
 }
